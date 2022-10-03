@@ -347,6 +347,20 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+function ascendingOrder(arr) {
+  let value = arr[0]
+  for (let i = 1; i < arr.length - 1; i++) {
+    if (arr[i] <= value) {
+      return false
+    } else {
+      value = arr[i]
+    }
+  }
+  return true
+}
+
+let arrayIsAscending = console.log(ascendingOrder(sampleArray));
+
 
 
 ////////////////// PROBLEM 22 ////////////////////
